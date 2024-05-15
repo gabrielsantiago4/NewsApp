@@ -15,7 +15,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        APIServices().getTopHeadlines(from:"br") { article in
+            print(article.articles.count)
+        }
     }
 
 
