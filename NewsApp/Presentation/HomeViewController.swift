@@ -35,7 +35,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let topArticles = viewModel.topHeadlines[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArticlesTableViewCell") as! ArticlesTableViewCell
-        cell.labelTest.text = topArticles.title
+        cell.configureCell(with: topArticles)
         return cell
     }
 }

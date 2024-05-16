@@ -10,6 +10,9 @@ import Foundation
 struct Article: Codable {
     var title: String
     var author: String?
+    var urlToImage: String?
+    var description: String?
+    var content: String?
 }
 
 struct TopHeadlines: Codable {

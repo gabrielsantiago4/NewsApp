@@ -13,7 +13,7 @@ class HomeView: UIView {
         var tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(ArticlesTableViewCell.self, forCellReuseIdentifier: "ArticlesTableViewCell")
-        tableView.rowHeight = FrameConstants.screenHeight * 0.089
+        tableView.rowHeight = FrameConstants.screenHeight * 0.4
         return tableView
     }()
 
@@ -42,6 +42,6 @@ extension HomeView: ViewCodingProtocol {
     }
     
     func addConfigurations() {
-        backgroundColor = .blue
+        //
     }
 }

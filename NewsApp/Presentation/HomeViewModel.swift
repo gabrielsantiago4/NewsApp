@@ -19,7 +19,8 @@ class HomeViewModel {
     }
     
     func getTopHeadlines() {
-        APIServices().getTopHeadlines(from: "br") {topHeadlines in
+        APIServices().getTopHeadlines(from: "us") {topHeadlines in
+            print(topHeadlines.articles)
             self.topHeadlines = topHeadlines.articles
         }
     }    
